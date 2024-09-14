@@ -12,7 +12,7 @@ fun main(){
         }
         else if(input.toIntOrNull()==null){
             println("Invalid input!")
-            print("Enter an positive Integer number:")
+            print("Enter an valid Integer number:")
             input = readln()
         }
         else if(input.toInt()<0){
