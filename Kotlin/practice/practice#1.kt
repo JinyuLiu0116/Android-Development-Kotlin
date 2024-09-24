@@ -78,4 +78,18 @@ fun main(args: Array<String>){
         'F' -> println("Work harder!")
         else -> println("Invalid")
     }
+
+    val score = 98
+    val letterGrade : Char
+    when(score){
+        in 91..100 -> letterGrade = 'A'
+        in 81..90 -> letterGrade = 'B'
+        in 71..80 -> letterGrade = 'C'
+        in 61..70 -> letterGrade = 'D'
+        60 -> letterGrade = 'E'
+        in 0..59 -> letterGrade = 'F'
+        else -> println("Invalid")
+    }
+    println("Letter grade: $letterGrade")
+        
 }
