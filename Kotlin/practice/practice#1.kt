@@ -57,4 +57,7 @@ fun main(args: Array<String>){
         "This is false condition"
     }
     println("Text: $text")
+
+    val num3 = if(num1 > num2) num1 else num2
+    println("Number 3: $num3")
 }
