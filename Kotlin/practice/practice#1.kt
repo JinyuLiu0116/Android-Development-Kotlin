@@ -45,4 +45,16 @@ fun main(args: Array<String>){
         println("You need to meet the minimum grade of 3.5")
     }
 
+    val num1 = 5
+    val num2 = -5
+    println("Number 1: $num1")
+    println("Number 2: $num2")
+    val text = if(num1 > 0 || num2 >0){
+        println("The condition is true, one of the two numbers is grater than 0")
+        "This is true condition"
+    }else{
+        println("The condition is false, none of the two numbers is grater tham 0")
+        "This is false condition"
+    }
+    println("Text: $text")
 }
