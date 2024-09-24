@@ -67,4 +67,15 @@ fun main(args: Array<String>){
     
     val result2 = if(condition == true) "condition is true" else -1
     println("Result 2: $result2")
+
+    val letterGrade = 'A'
+    when (letterGrade) {
+        'A' -> println("Score is between 91 and 100")
+        'B' -> println("Score is between 81 and 90")
+        'C' -> println("Score is between 71 and 80")
+        'D' -> println("Score is between 61 and 70")
+        'E' -> println("Score is equal to 60")
+        'F' -> println("Work harder!")
+        else -> println("Invalid")
+    }
 }
