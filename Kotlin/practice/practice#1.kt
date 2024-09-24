@@ -62,7 +62,7 @@ fun main(args: Array<String>){
     println("Number 3: $num3")
 
     val condition = true
-    val result : string = if(condition == true) "condition is true" else "condition is false"
+    val result : String = if(condition == true) "condition is true" else "condition is false"
     println("Result: $result")
     
     val result2 = if(condition == true) "condition is true" else -1
