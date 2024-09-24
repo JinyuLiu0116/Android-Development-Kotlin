@@ -91,5 +91,16 @@ fun main(args: Array<String>){
         else -> println("Invalid")
     }
     println("Letter grade: $letterGrade")
+
+    val letterGrade2 = when(score){
+        in 91..100 -> 'A'
+        in 81..90 -> 'B'
+        in 71..80 -> 'C'
+        in 61..70 -> 'D'
+        60 -> 'E'
+        in 0..59 -> 'F'
+        else -> println("Invalid")
+    }
+    println("Letter grade 2: $letterGrade2")
         
 }
