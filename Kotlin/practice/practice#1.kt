@@ -35,4 +35,14 @@ fun main(args: Array<String>){
         println("My number is less than 90")
     }
 
+    val isFullTimeStudent = false
+    val grade = 3.6
+    if(isFullTimeStudent && grade >= 3.5){
+        println("You can apply the scholarship for full time student")
+    }else if (!isFullTimeStudent && grade >= 3.5) {
+        println("You can apply the scholarship for part time student")
+    }else{
+        println("You need to meet the minimum grade of 3.5")
+    }
+
 }
