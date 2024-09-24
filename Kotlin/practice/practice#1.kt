@@ -60,4 +60,11 @@ fun main(args: Array<String>){
 
     val num3 = if(num1 > num2) num1 else num2
     println("Number 3: $num3")
+
+    val condition = true
+    val result : string = if(condition == true) "condition is true" else "condition is false"
+    println("Result: $result")
+    
+    val result2 = if(condition == true) "condition is true" else -1
+    println("Result 2: $result2")
 }
