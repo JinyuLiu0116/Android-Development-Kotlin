@@ -132,4 +132,15 @@ fun main(args: Array<String>){
               break
     }
     println("Hello $name")
+
+    var mMapFruits = mutableMapOf(
+        1 to "Apple",
+        3 to "Banana",
+        6 to "Watermelon",
+        5 to "Peach"
+    )
+    println("Fruits: $mMapFruits")
+    mMapFruits[4] = "BlueBerry"
+    mMapFruits = mMapFruits.toSortedMap()
+    println("Fruits: $mMapFruits")
 }
