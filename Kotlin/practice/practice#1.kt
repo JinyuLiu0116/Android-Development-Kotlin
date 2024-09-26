@@ -25,6 +25,14 @@ fun main(args: Array<String>){
 
     result %= 2
     println("result: $result")
+    println()
+
+    val numA = (1..30).random()
+    val numB = (1..30).random()
+    if(numA == numB) println("Number $numA is equal to number $numB")
+        else if (numA > numB) println("Number $numA is greater than number $numB")
+            else println("Number $numA is less tham number $numB:)
+    println()
 
     val myNumber = 100
     if(myNumber > 150){
