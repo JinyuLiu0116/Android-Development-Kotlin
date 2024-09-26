@@ -102,5 +102,18 @@ fun main(args: Array<String>){
         else -> println("Invalid")
     }
     println("Letter grade 2: $letterGrade2")
+
+    var text1 : String? = null
+    var text2 = ""
+    if(text1 != null){
+        text2 = text1
+    }else{
+        text2 = "The variable is null"
+    }
+    println("Text 2: $text2")
+
+    var text3 : String? = null
+    text3 = "This variable is not null"
+    val text4 : String = text3 ?: "The variable is null"
         
 }
