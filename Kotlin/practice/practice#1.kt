@@ -60,6 +60,27 @@ fun main(args: Array<String>){
     println(displayDate)
     println()
 
+    for(index in 1..10)
+        print("$index ")
+    for(index in "HelloWold")
+        print("$index "
+    for(index in 100 downTo 50)
+        print("$index ")
+    for(index in 1..100 step 5)
+        print("$index ")
+    var oddNumList : MutableList<Int> = mutableListOf()
+    var evenNumList : MutableList<Int> = mutableListOf()
+    for(index fin 1..500){
+        if(index % 2 == 0)
+            evenNumList.add(index)
+        else
+            oddNumList.add(index)
+    }
+    println("Even numbers: $evenNumList")
+    println("Odd numbers: $oddNumList")
+    print()
+        
+
     val num1 = 5
     val num2 = -5
     println("Number 1: $num1")
