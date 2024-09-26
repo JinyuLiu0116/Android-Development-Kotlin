@@ -115,5 +115,21 @@ fun main(args: Array<String>){
     var text3 : String? = null
     text3 = "This variable is not null"
     val text4 : String = text3 ?: "The variable is null"
-        
+
+    laterinit var name : String
+    while(true){
+        print("Please enter your name:)
+        name = readLine()
+        if(name.isEmpty()){
+            println("Name cannot be empty.")
+            continue
+        }
+        else if(!name.all{it.isLetter()}){
+            println("Only alphabets letters are allowed.")
+            continue
+        }
+        else
+              break
+    }
+    println("Hello $name")
 }
