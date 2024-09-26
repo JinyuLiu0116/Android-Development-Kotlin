@@ -52,6 +52,13 @@ fun main(args: Array<String>){
     }else{
         println("You need to meet the minimum grade of 3.5")
     }
+    println()
+
+    val date = Date()
+    val today = if(date.year == 2024) true else false
+    val displayDate = if(today == true) "Today is 2024" else "Today is not 2024"
+    println(displayDate)
+    println()
 
     val num1 = 5
     val num2 = -5
