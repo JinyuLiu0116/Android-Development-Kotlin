@@ -1,1 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2E2E2D"
+    tools:context=".MainActivity">
 
+    <EditText
+        android:id="@+id/secondNum"
+        android:layout_width="286dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="32dp"
+        android:background="#C1BFBF"
+        android:ems="10"
+        android:hint="@string/num2"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColorHint="#0D0C0C"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstNum" />
+
+    <Button
+        android:id="@+id/bSubtract"
+        android:layout_width="68dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="76dp"
+        android:backgroundTint="#FFC107"
+        android:text="@string/button_subtract"
+        android:textAlignment="center"
+        android:textIsSelectable="false"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.021"
+        app:layout_constraintStart_toEndOf="@+id/bAdd"
+        app:layout_constraintTop_toBottomOf="@+id/secondNum" />
+
+    <TextView
+        android:id="@+id/textResult"
+        android:layout_width="184dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="72dp"
+        android:background="#CACAC6"
+        android:hint="@string/result"
+        android:textAlignment="center"
+        android:textColor="#0F0E0E"
+        android:textColorHint="#0D0C0C"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.181"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bSubtract" />
+
+    <Button
+        android:id="@+id/bAdd"
+        android:layout_width="68dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="76dp"
+        android:backgroundTint="#FFC107"
+        android:text="@string/button_add"
+        android:textAlignment="center"
+        android:textIsSelectable="false"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textResult"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondNum"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/firstNum"
+        android:layout_width="286dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="32dp"
+        android:background="#B6B4B4"
+        android:ems="10"
+        android:hint="@string/num1"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColorHint="#101010"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
