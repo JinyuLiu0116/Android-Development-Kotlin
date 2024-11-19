@@ -8,34 +8,37 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
+import com.example.finalproject.databinding.ActivityMainBinding
 
 private const val TAG = "MainActivity: "
 class MainActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityMainBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-        //binding = ActivityMainBinding.inflate(layoutInflater)
-        //setContentView(binding.root)
-        if(savedInstanceState == null) {
-            val fragmentOne = Fragment_sign_in()
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
+        val frag1 = Fragment_sign_in()
+        val frag2 = Fragment_sign_up()
 
-            fragmentOne.arguments = intent.extras
-            supportFragmentManager.beginTransaction().add(
-                R.id.fragmentContainerView, fragmentOne
-            ).commit()
-        }
-        val fragmentTwo = Fragment_sign_up()
-
-
-
-        /*binding.bt_signIn.setOnClickListener {
-            replaceFragment(Fragment_sign_in())
+        binding.btSingIn.setOnClickListener {
+            supportFragmentManager.beginTransaction().apply {
+                replace(R.id.fragmentContainerView, frag1)
+                commit()
+            }
         }
 
-        binding.bt_signUp.setOnClickListener {
-            replaceFragment(Fragment_sign_up())
-        }*/
+        binding.btSingUp.setOnClickListener {
+            supportFragmentManager.beginTransaction().apply {
+                replace(R.id.fragmentContainerView, frag2)
+                commit()
+            }
+        }
+
+        binding.btSubmit.setOnClickListener{
+
+        }
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
