@@ -13,9 +13,8 @@
         android:id="@+id/fragmentContainerView"
         android:name="com.example.finalproject.Fragment_sign_in"
         android:layout_width="0dp"
-        android:layout_height="260dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
+        android:layout_height="450dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -38,13 +37,14 @@
             android:id="@+id/bt_singIn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="5dp"
+            android:layout_marginEnd="2.5dp"
             android:layout_weight="1"
             android:backgroundTint="#FFC107"
             android:hint="@string/sign_in"
             android:textColorHint="@color/black"
-            android:textSize="20sp"
-            android:textStyle="bold"/>
+
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/bt_singUp"
@@ -56,20 +56,20 @@
             android:backgroundTint="#FFC107"
             android:hint="@string/sign_up"
             android:textColorHint="@color/black"
-            android:textSize="20sp"
-            android:textStyle="bold"/>
+            android:textSize="16sp"
+            android:textStyle="bold" />
 
         <Button
-            android:id="@+id/bt_submit"
+            android:id="@+id/bt_next"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="5dp"
+            android:layout_marginStart="10dp"
             android:layout_weight="1"
             android:backgroundTint="#FFC107"
-            android:hint="@string/submit"
+            android:hint="-->"
             android:textColorHint="@color/black"
-            android:textSize="20sp"
-            android:textStyle="bold"/>
+            android:textSize="16sp"
+            android:textStyle="bold" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
