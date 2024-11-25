@@ -35,8 +35,9 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        binding.btSubmit.setOnClickListener{
-
+        binding.btNext.setOnClickListener{
+            val intent = Intent(this, SecondActivity::class.java)
+            startActivity(intent)
         }
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
